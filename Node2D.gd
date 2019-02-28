@@ -1,0 +1,2 @@
+extends "res://test.gd"
+

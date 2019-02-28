@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://MainGame.gd" type="Script" id=1]
+[ext_resource path="res://assets/roll_bg.png" type="Texture" id=2]
+[ext_resource path="res://roulette.tscn" type="PackedScene" id=3]
+[ext_resource path="res://pine.tscn" type="PackedScene" id=4]
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="roulette_bg" type="Sprite" parent="."]
+position = Vector2( 238.705, 410.713 )
+scale = Vector2( 1.23986, 1.23986 )
+texture = ExtResource( 2 )
+
+[node name="roulette" parent="." instance=ExtResource( 3 )]
+position = Vector2( 240.568, 408.098 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="select" type="Node2D" parent="."]
+position = Vector2( 237.234, 180.888 )
+
+[node name="pine" parent="select" instance=ExtResource( 4 )]
+
+[connection signal="stopped" from="roulette" to="." method="_on_roulette_stopped"]
+[connection signal="wt_area" from="select/pine" to="." method="_on_pine_wt_area"]

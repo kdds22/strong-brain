@@ -1,0 +1,127 @@
+{
+	"Force"     : 0,
+	"Type"	    : "Neurology",
+	"Questions" :
+	[
+		{
+			"id"       : 0,
+			"text"	   : "Regarding multiple sclerosis, it is correct to state:",
+			"next_id"  : 1,
+			"choices"  : [
+				{
+					"text"     : "Outbreaks are more frequent during gestation",
+					"result"   : false
+				},
+				{
+					"text"     : "There may be mild lymphocytosis and / or slight increase in protein in the cerebrospinal fluid",
+					"result"   : true
+				},
+				{
+					"text"     : "The use of corticoids chronically reduces the frequency of outbreaks",
+					"result"   : false
+				},
+				{
+					"text"     : "Lhermitte's sign is worsening of symptoms with increase in body temperature",
+					"result"   : false
+				}
+				
+			]
+        },
+        {
+			"id"       : 1,
+			"text"	   : "Patients with sickle cell anemia have frequent neurological complications. Check the alternative that is related to hemorrhagic stroke.",
+			"next_id"  : 2,
+			"choices"  : [
+				{
+					"text"     : "Acute thoracic syndrome",
+					"result"   : false
+				},
+				{
+					"text"     : "High blood pressure",
+					"result"   : false
+				},
+				{
+					"text"     : "Increased white blood cell count",
+					"result"   : true
+				},
+				{
+					"text"     : "Previous subclinical vascular accidents",
+					"result"   : false
+				}
+				
+			]
+        },
+        {
+			"id"       : 2,
+			"text"	   : "Guillain-Barré syndrome is the most frequent cause of:",
+			"next_id"  : 3,
+			"choices"  : [
+				{
+					"text"     : "Myopathic disease.",
+					"result"   : false
+				},
+				{
+					"text"     : "Vestibular ataxia.",
+					"result"   : false
+				},
+				{
+					"text"     : "State of bad convulsive",
+					"result"   : false
+				},
+				{
+					"text"     : "Acute flaccid paralysis",
+					"result"   : true
+				}
+				
+			]
+        },
+        {
+			"id"       : 3,
+			"text"	   : "A 45-year-old man has headache accompanied by bitemporal hemianopia. The probable cranial magnetic resonance imaging report is:",
+			"next_id"  : 4,
+			"choices"  : [
+				{
+					"text"     : "Pituitary adenoma",
+					"result"   : true
+				},
+				{
+					"text"     : "Frontal astrocytoma",
+					"result"   : false
+				},
+				{
+					"text"     : "Occipital glioblastoma",
+					"result"   : false
+				},
+				{
+					"text"     : "Thalamic haemorrhagic vascular accident",
+					"result"   : false
+				}
+				
+			]
+        },
+        {
+			"id"       : 4,
+			"text"	   : "Patient, at the end of his workday, seeks medical attention looking very anxious and complaining of low back pain. During the examination, it is noted that the complaint of pain is disproportionate to the changes found, there is no clear definition of the movement that causes the pain, and the intensity of the pain decreases when the patient's attention is diverted. Does this picture match which etiology for low back pain?",
+			"next_id"  : 0,
+			"choices"  : [
+				{
+					"text"     : "Nephrolithiasis",
+					"result"   : false
+				},
+				{
+					"text"     : "Psychosomatic conversion",
+					"result"   : true
+				},
+				{
+					"text"     : "Muscle-ligament distention",
+					"result"   : false
+				},
+				{
+					"text"     : "Paravertebral muscle fatigue",
+					"result"   : false
+				}
+				
+			]
+        }
+    ]
+}

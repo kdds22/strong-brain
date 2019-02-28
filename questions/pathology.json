@@ -1,0 +1,127 @@
+{
+	"Force"     : 0,
+	"Type"	    : "Pathology",
+	"Questions" :
+	[
+		{
+			"id"       : 0,
+			"text"	   : "They are cells that participate in the inflammatory process, EXCEPT:",
+			"next_id"  : 1,
+			"choices"  : [
+				{
+					"text"     : "Macrophages.",
+					"result"   : false
+				},
+				{
+					"text"     : "Lymphocytes.",
+					"result"   : false
+				},
+				{
+					"text"     : "Fibrocytes.",
+					"result"   : true
+				},
+				{
+					"text"     : "Eosinophils.",
+					"result"   : false
+				}
+				
+			]
+        },
+        {
+			"id"       : 1,
+			"text"	   : "The term degeneration has been used in Medicine since Antiquity, with several senses. Hyaline degeneration and mucoid degeneration are types of degeneration with accumulation of:",
+			"next_id"  : 2,
+			"choices"  : [
+				{
+					"text"     : "Water",
+					"result"   : false
+				},
+				{
+					"text"     : "Lipids",
+					"result"   : false
+				},
+				{
+					"text"     : "Thrombosis",
+					"result"   : false
+				},
+				{
+					"text"     : "Glycerides",
+					"result"   : true
+				}
+				
+			]
+        },
+        {
+			"id"       : 2,
+			"text"	   : "They form both in the pulmonary circulation and in the great circulation. Left ventricular failure, stenosis, mitral insufficiency, pulmonary vein compressions, and increased post-capillary resistance may cause:",
+			"next_id"  : 3,
+			"choices"  : [
+				{
+					"text"     : "Ischemia",
+					"result"   : false
+				},
+				{
+					"text"     : "Thrombosis",
+					"result"   : false
+				},
+				{
+					"text"     : "Active hyperemia",
+					"result"   : false
+				},
+				{
+					"text"     : "Passive hyperemia",
+					"result"   : true
+				}
+				
+			]
+        },
+        {
+			"id"       : 3,
+			"text"	   : "",
+			"next_id"  : 4,
+			"choices"  : [
+				{
+					"text"     : "",
+					"result"   : false
+				},
+				{
+					"text"     : "",
+					"result"   : true
+				},
+				{
+					"text"     : "",
+					"result"   : false
+				},
+				{
+					"text"     : "",
+					"result"   : false
+				}
+				
+			]
+        },
+        {
+			"id"       : 4,
+			"text"	   : "",
+			"next_id"  : 0,
+			"choices"  : [
+				{
+					"text"     : "",
+					"result"   : false
+				},
+				{
+					"text"     : "",
+					"result"   : true
+				},
+				{
+					"text"     : "",
+					"result"   : false
+				},
+				{
+					"text"     : "",
+					"result"   : false
+				}
+				
+			]
+        }
+    ]
+}

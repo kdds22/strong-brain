@@ -1,0 +1,127 @@
+{
+	"Force"     : 0,
+	"Type"	    : "Pharmacology",
+	"Questions" :
+	[
+		{
+			"id"       : 0,
+			"text"	   : "With regard to the correct use of antimicrobials, it can be stated that:",
+			"next_id"  : 1,
+			"choices"  : [
+				{
+					"text"     : "When there is no clinical improvement, the dose and duration of treatment should be increased.",
+					"result"   : false
+				},
+				{
+					"text"     : "Amoxicillin is indicated in the alveolitis.",
+					"result"   : false
+				},
+				{
+					"text"     : "Anaerobes are not sensitive to metronidazole.",
+					"result"   : false
+				},
+				{
+					"text"     : "The ideal is to make prescription of the short spectrum.",
+					"result"   : true
+				}
+				
+			]
+        },
+        {
+			"id"       : 1,
+			"text"	   : "The chemotherapy listed below most often associated with cardiotoxicity is:",
+			"next_id"  : 2,
+			"choices"  : [
+				{
+					"text"     : "Doxorubicin",
+					"result"   : true
+				},
+				{
+					"text"     : "Cyclosporin",
+					"result"   : false
+				},
+				{
+					"text"     : "Tacrolimus",
+					"result"   : false
+				},
+				{
+					"text"     : "Methotrexate",
+					"result"   : false
+				}
+				
+			]
+        },
+        {
+			"id"       : 2,
+			"text"	   : "The use of levofloxacin may cause, with low but not negligible frequency:",
+			"next_id"  : 3,
+			"choices"  : [
+				{
+					"text"     : "Acute Liver Failure",
+					"result"   : false
+				},
+				{
+					"text"     : "Irreversible lesion of the vestibular nerve",
+					"result"   : false
+				},
+				{
+					"text"     : "Torsades de Pointes",
+					"result"   : false
+				},
+				{
+					"text"     : "Tendonitis and rupture of the Achilles tendon",
+					"result"   : true
+				}
+				
+			]
+        },
+        {
+			"id"       : 3,
+			"text"	   : "Drug interaction is a frequent cause of hospital admissions. The nurse must know that the drug interaction between:",
+			"next_id"  : 4,
+			"choices"  : [
+				{
+					"text"     : "Contraceptives and rifampicin increases the contraceptive effect",
+					"result"   : false
+				},
+				{
+					"text"     : "Tetracycline and antacids increase the absorption of tetracycline",
+					"result"   : false
+				},
+				{
+					"text"     : "Angiotensin and potassium conversion enzyme inhibitors cause abrupt hypokalemia",
+					"result"   : false
+				},
+				{
+					"text"     : "Anxiolytics and sedatives potentiate the effect of these drugs",
+					"result"   : true
+				}
+				
+			]
+        },
+        {
+			"id"       : 4,
+			"text"	   : "Client attended in the outpatient clinic has extrapyramidal syndrome due to excessive ingestion of haloperidol. In this case, the characteristic signs of this syndrome are:",
+			"next_id"  : 0,
+			"choices"  : [
+				{
+					"text"     : "Bronchial secretion, kernictero and bradycardia",
+					"result"   : false
+				},
+				{
+					"text"     : "Agitation, malignant hyperthermia and hypoglycemia",
+					"result"   : false
+				},
+				{
+					"text"     : "Euphoria, hypothermia and trachoma",
+					"result"   : false
+				},
+				{
+					"text"     : "Neck stiffness, facial spasms and opisthotonus",
+					"result"   : true
+				}
+				
+			]
+        }
+    ]
+}

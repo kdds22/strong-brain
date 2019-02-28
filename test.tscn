@@ -1,0 +1,157 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://test.gd" type="Script" id=1]
+[ext_resource path="res://assets/PNG/blue_panel.png" type="Texture" id=2]
+[ext_resource path="res://font_game1.tres" type="DynamicFontData" id=3]
+[ext_resource path="res://assets/PNG/blue_button00.png" type="Texture" id=4]
+[ext_resource path="res://assets/PNG/blue_button01.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 15
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Panel_Base" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Panel" type="NinePatchRect" parent="."]
+self_modulate = Color( 0.705882, 0.705882, 0.705882, 1 )
+margin_left = 51.0
+margin_top = 100.0
+margin_right = 433.0
+margin_bottom = 745.0
+texture = ExtResource( 2 )
+region_rect = Rect2( -0.387001, 1.25, 101, 98.5 )
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 4
+
+[node name="QuestionType" type="RichTextLabel" parent="Panel"]
+margin_left = 28.65
+margin_top = 17.85
+margin_right = 144.65
+margin_bottom = 46.85
+hint_tooltip = "type"
+custom_fonts/normal_font = SubResource( 1 )
+text = "BASE"
+
+[node name="QuestionText" type="RichTextLabel" parent="Panel"]
+margin_left = 15.0
+margin_top = 64.0
+margin_right = 367.0
+margin_bottom = 226.0
+hint_tooltip = "statement"
+custom_fonts/normal_font = SubResource( 1 )
+tab_size = 6
+
+[node name="Choices" type="Control" parent="Panel"]
+margin_left = 169.1
+margin_top = 268.85
+margin_right = 209.1
+margin_bottom = 308.85
+
+[node name="Choice_A" type="TextureButton" parent="Panel/Choices"]
+margin_left = -143.0
+margin_top = -29.0
+margin_right = 198.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Panel/Choices/Choice_A"]
+margin_left = 11.0
+margin_top = 2.0
+margin_right = 331.0
+margin_bottom = 60.0
+hint_tooltip = "Option A"
+custom_fonts/font = SubResource( 1 )
+text = "sfsdfsdgsdgdgdagdgdsgsfsafdsagsdgs
+dgsdgsdgsdgsd
+"
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="Choice_B" type="TextureButton" parent="Panel/Choices"]
+margin_left = -143.0
+margin_top = 61.0
+margin_right = 198.0
+margin_bottom = 131.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Panel/Choices/Choice_B"]
+margin_left = 11.0
+margin_top = 2.0
+margin_right = 333.0
+margin_bottom = 58.0
+hint_tooltip = "Option B"
+custom_fonts/font = SubResource( 1 )
+text = "sfsdfsdgsdgdgdagdgdsgsfsafdsagsdgs
+dgsdgsdgsdgsd
+"
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="Choice_C" type="TextureButton" parent="Panel/Choices"]
+margin_left = -143.0
+margin_top = 151.0
+margin_right = 198.0
+margin_bottom = 221.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Panel/Choices/Choice_C"]
+margin_left = 11.0
+margin_top = 2.0
+margin_right = 333.0
+margin_bottom = 57.0
+hint_tooltip = "Option C"
+custom_fonts/font = SubResource( 1 )
+text = "sfsdfsdgsdgdgdagdgdsgsfsafdsagsdgs
+dgsdgsdgsdgsd
+"
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="Choice_D" type="TextureButton" parent="Panel/Choices"]
+margin_left = -143.0
+margin_top = 241.0
+margin_right = 198.0
+margin_bottom = 311.0
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="Panel/Choices/Choice_D"]
+margin_left = 11.0
+margin_top = 2.0
+margin_right = 332.0
+margin_bottom = 58.0
+hint_tooltip = "Option D"
+custom_fonts/font = SubResource( 1 )
+text = "sfsdfsdgsdgdgdagdgdsgsfsafdsagsdgs
+dgsdgsdgsdgsd
+"
+valign = 1
+autowrap = true
+clip_text = true
+

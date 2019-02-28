@@ -1,0 +1,27 @@
+{
+    "Figado"     :
+        {
+            "text" : "Second largest organ of the human body.",
+            "pass" : 0
+        },
+    "Estomago"   :
+        {
+            "text" : "Located between the esophagus and the duodenum.",
+            "pass" : 1
+        },
+    "Pulmao"     :
+        {
+            "text" : "Oxygenate the blood and eliminate carbon dioxide from the body.",
+            "pass" : 2
+        },
+    "ApUrinario" :
+        {
+            "text" : "Formation, deposition and elimination of urine.",
+            "pass" : 3
+        },
+    "Intestino"  :
+        {
+            "text" : "Responsible for the absorption of most nutrients and most of the water.",
+            "pass" : 4
+        }
+}

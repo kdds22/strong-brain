@@ -1,0 +1,131 @@
+{
+	"Force"     : 0,
+	"Type"	    : "Anatomy",
+	"Questions" :
+	[
+		{
+			"id"       : 0,
+			"text"	   : "The diaphragm separates an abdominal cavity from the thoracic cavity, with openings that allow the passage of some organs. With regard to diaphragm openings, it is correct to state that the: ",
+			"next_id"  : 1,
+			"choices"  : [
+				{
+					"text"     : "The foramen magnum vein is located on the right side.",
+					"result"   : false
+				},
+				{
+					"text"     : "Hiatus passes behind the tendon center.",
+					"result"   : true
+				},
+				{
+					"text"     : "The inferior vena cava goes through the esophageal hiatus.",
+					"result"   : false
+				},
+				{
+					"text"     : "Aorta pierces the diaphragmatic muscle.",
+					"result"   : false
+				}
+				
+			]
+		},
+		{
+			"id"       : 1,
+			"text"	   : "Anatomical descriptions require a reference to body positions and parts. Thus, imaginary planes were created that cross the body in the anatomical position. Mark the alternative that presents the plane that divides the body into a cranial and caudal portion. ",
+			"next_id"  : 2,
+			"choices"  : [
+				{
+					"text"     : "Sagittal",
+					"next_id"  : "2",
+					"result"   : false
+				},
+				{
+					"text"     : "Median",
+					"next_id"  : "2",
+					"result"   : false
+				},
+				{
+					"text"     : "Front",
+					"next_id"  : "2",
+					"result"   : false
+				},
+				{
+					"text"     : "Horizontal",
+					"next_id"  : "2",
+					"result"   : true
+				}
+				
+			]
+		},
+        {
+			"id"       : 2,
+			"text"	   : "Mark the alternative that presents the three compartments that divide the thoracic cavity.",
+			"next_id"  : 3,
+			"choices"  : [
+				{
+					"text"     : "Two pleural cavities and one sternal.",
+					"result"   : false
+				},
+				{
+					"text"     : "Two pleural cavities and the mediastinum.",
+					"result"   : true
+				},
+				{
+					"text"     : "One pleural cavity and two sternals.",
+					"result"   : false
+				},
+				{
+					"text"     : "Pleural cavity, sternum and mediastinum.",
+					"result"   : false
+				}
+				
+			]
+        },
+        {
+			"id"       : 3,
+			"text"	   : "The diaphragm separates the abdominal cavity from the thoracic cavity, with openings that allow the passage of some organs. With respect to the apertures of the diaphragm, it is correct to state that the (a):",
+			"next_id"  : 4,
+			"choices"  : [
+				{
+					"text"     : "Foramen magna vein is located on the right side.",
+					"result"   : false
+				},
+				{
+					"text"     : "Inferior vena cava goes through the esophageal hiatus.",
+					"result"   : false
+				},
+				{
+					"text"     : "Esophageal hiatus passes behind the tendon center.",
+					"result"   : true
+				},
+				{
+					"text"     : "Aorta perforates the diaphragmatic muscle.",
+					"result"   : false
+				}
+				
+			]
+        },
+        {
+			"id"       : 4,
+			"text"	   : "Considering the individuals' biotype, the lean cadavers, generally long, unlike the obese and low, are designated:",
+			"next_id"  : 0,
+			"choices"  : [
+				{
+					"text"     : "Brevilines",
+					"result"   : false
+				},
+				{
+					"text"     : "Normolines",
+					"result"   : false
+				},
+				{
+					"text"     : "Mediolines",
+					"result"   : false
+				},
+				{
+					"text"     : "Longilines",
+					"result"   : true
+				}
+				
+			]
+        }
+	]
+}

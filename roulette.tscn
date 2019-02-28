@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://roulette.gd" type="Script" id=1]
+[ext_resource path="res://assets/roll.png" type="Texture" id=2]
+
+[node name="roulette" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = -385.78
+margin_top = -381.365
+margin_right = 386.22
+margin_bottom = 381.635
+texture_normal = ExtResource( 2 )
+
+[node name="areas" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="pathology" type="Area2D" parent="areas"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/pathology"]
+polygon = PoolVector2Array( 20.8337, -37.3037, 43.5366, -0.158544, 369.114, 1.22186, 354.625, -89.1615, 326.274, -171.574, 263.048, -251.838, 189.25, -312.477 )
+
+[node name="neurology" type="Area2D" parent="areas"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/neurology"]
+rotation = -1.10644
+polygon = PoolVector2Array( 17.4321, -49.1529, 42.9077, 1.78714, 364.244, 28.7856, 357.082, -75.5044, 323.692, -168.836, 265.637, -250.45, 193.2, -310.652 )
+
+[node name="physiology" type="Area2D" parent="areas"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/physiology"]
+position = Vector2( -13.9667, 1.39668 )
+rotation = -2.13581
+polygon = PoolVector2Array( 18.9581, -39.957, 44.631, 1.42371, 359.664, 17.3715, 348.778, -78.117, 315.763, -164.994, 264.086, -237.735, 188.719, -302.002 )
+
+[node name="anatomy" type="Area2D" parent="areas"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/anatomy"]
+position = Vector2( -13.9667, 1.39668 )
+rotation = -3.19738
+polygon = PoolVector2Array( 23.6409, -46.8705, 44.8757, -3.29534, 355.818, 17.1554, 348.778, -78.117, 315.763, -164.994, 264.086, -237.735, 189.789, -303.435 )
+
+[node name="cardiology" type="Area2D" parent="areas"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/cardiology"]
+position = Vector2( -13.9667, 1.39668 )
+rotation = -4.26356
+polygon = PoolVector2Array( 24.3325, -54.0545, 52.8362, -2.71593, 357.567, 18.6502, 353.65, -68.6785, 322.712, -168.142, 269.703, -249.663, 201.654, -312.674 )
+
+[node name="pharmacology" type="Area2D" parent="areas"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/pharmacology"]
+position = Vector2( -13.9667, 1.39668 )
+rotation = -5.2938
+polygon = PoolVector2Array( 30.5471, -48.7855, 58.6928, -7.29099, 371.837, 11.5254, 368.318, -75.0116, 338.522, -177.159, 278.067, -259.968, 210.827, -319.935 )
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
