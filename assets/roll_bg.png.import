@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/roll_bg.png-e4706c86e0c52ab873d31f7f6ff4b0ca.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

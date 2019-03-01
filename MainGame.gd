@@ -15,20 +15,20 @@ var can = false
 
 
 func _process(delta):
-	$UI/TextureRect/lbl_brainWin.text = str(Global_profile.brainsWinners)
-	$UI/TextureRect/lbl_brainLoose.text = str(Global_profile.brainsLoosers)
-	if Global_profile.brainsWinners >= 5:
+	$UI/TextureRect/lbl_brainWin.text = str(Global_IDs.brainsWinners)
+	$UI/TextureRect/lbl_brainLoose.text = str(Global_IDs.brainsLoosers)
+	if Global_IDs.brainsWinners >= 5:
 		reset_game()
 		var win_game = pre_win_game.instance()
 		add_child(win_game)
-	elif Global_profile.brainsLoosers >= 5:
+	elif Global_IDs.brainsLoosers >= 5:
 		reset_game()
 		var loose_game = pre_loose_game.instance()
 		add_child(loose_game)
 
 func reset_game():
 	Global_IDs.reset_data()
-	Global_profile.reset_points()
+	Global_IDs.reset_points()
 
 
 #pathology, pharmacology, neurology, physiology, anatomy, cardiology
@@ -36,7 +36,7 @@ func wt_Area(name : String):
 	
 	if can:
 		if name == "pathology":
-			show_unit(0)
+			show_unit(1-1)
 		elif name == "pharmacology" :
 			show_unit(1)
 		elif name == "neurology" :
@@ -51,7 +51,7 @@ func wt_Area(name : String):
 			print("ops")
 			print(name)
 
-func show_unit(value):
+func show_unit(value : int):
 	var unit = pre_units[value].instance()
 	add_child(unit)
 

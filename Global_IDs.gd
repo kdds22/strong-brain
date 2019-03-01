@@ -1,5 +1,11 @@
 extends Node
 
+var brainsWinners : int = 0
+var brainsLoosers : int = 0
+
+var was_started = false
+
+
 var pathology_id    = 0  
 var pharmacology_id = 0  
 var neurology_id    = 0  
@@ -15,7 +21,6 @@ func _ready():
 	areas.append(physiology_id)
 	areas.append(anatomy_id)
 	areas.append(cardiology_id)
-
 #pathology_id, pharmacology_id, neurology_id, physiology_id, anatomy_id, cardiology_id
 
 func reset_data():
@@ -25,3 +30,12 @@ func reset_data():
 	physiology_id   = 0  
 	anatomy_id      = 0  
 	cardiology_id   = 0  
+
+
+func set_start(value : bool):
+	was_started = value
+
+
+func reset_points():
+	brainsWinners = 0
+	brainsLoosers = 0

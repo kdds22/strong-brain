@@ -11,7 +11,7 @@ var quest = []
 var quest_n = []
 var pas
 var txt
-var was_started = Global_profile.was_started
+var was_started = Global_IDs.was_started
 
 
 func _ready():
@@ -145,7 +145,7 @@ func _on_intestino_pressed():
 	pas_question(4)
 
 func pas_question(value):
-	Global_profile.set_start(true)
+	Global_IDs.set_start(true)
 	if pas == value:
 		$AnimationPlayer.play("zoom_in")
 	else:

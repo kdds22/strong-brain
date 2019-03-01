@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/yellow_boxCheckmark.png-b51e4bf8a8bbfc4c4a3e1fe0434059e5.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/blue_tick.png-ab516af6f9beb831a0b15a65e1fb3a8a.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

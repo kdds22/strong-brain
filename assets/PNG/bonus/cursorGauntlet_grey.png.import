@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/cursorGauntlet_grey.png-f6b062703f925097abab132d8933d4ee.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

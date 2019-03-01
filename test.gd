@@ -28,6 +28,7 @@ onready var ButtonsLabels = [$Panel/Choices/Choice_A/Label,$Panel/Choices/Choice
 
 
 func _ready():
+	#print(global_area)
 	#interact()
 	#global_area = global_area+"_id"
 	call_question()
@@ -109,9 +110,9 @@ func end_question(value):
 
 func _on_BrainEndAnim(value):
 	if value:
-		Global_profile.brainsWinners += 1
+		Global_IDs.brainsWinners += 1
 	else:
-		Global_profile.brainsLoosers += 1
+		Global_IDs.brainsLoosers += 1
 	queue_free()
 
 

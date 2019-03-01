@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/brain_looser.png-68fb18733f6eb4ef79431c0977228224.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

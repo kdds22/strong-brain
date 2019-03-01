@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/cursorHand_blue.png-efd1ab8cdf16cd551200f5407b315f97.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 

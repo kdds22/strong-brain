@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/cursorSword_silver.png-03e45b9c194e276f54c9ddaedd985e1a.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
