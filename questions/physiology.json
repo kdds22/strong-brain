@@ -5,47 +5,47 @@
 	[
 		{
 			"id"       : 0,
-			"text"	   : "",
+			"text"	   : "One of the functions of the large intestine is:",
 			"next_id"  : 1,
 			"choices"  : [
 				{
-					"text"     : "",
+					"text"     : "Store the bile",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Assist in the passage of the food bolus into the stomach",
+					"result"   : false
+				},
+				{
+					"text"     : "Secreting digestive enzymes",
+					"result"   : false
+				},
+				{
+					"text"     : "Reabsorption of water and mineral salts",
 					"result"   : true
-				},
-				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
-					"result"   : false
 				}
 				
 			]
         },
         {
 			"id"       : 1,
-			"text"	   : "",
+			"text"	   : "These are B-complex vitamins that are related to the health of the central nervous system:",
 			"next_id"  : 2,
 			"choices"  : [
 				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
+					"text"     : "Niacin, thiamine, pyridoxine",
 					"result"   : true
 				},
 				{
-					"text"     : "",
+					"text"     : "Niacin, thiamine, biotin",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Folate, biotin, riboflavin",
+					"result"   : false
+				},
+				{
+					"text"     : "Thiamine, folate, pyridoxine",
 					"result"   : false
 				}
 				
@@ -53,23 +53,23 @@
         },
         {
 			"id"       : 2,
-			"text"	   : "",
+			"text"	   : "The reserves of body fat will be spared in the existence of great availability of:",
 			"next_id"  : 3,
 			"choices"  : [
 				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
+					"text"     : "Fatty acids of the diet",
 					"result"   : true
 				},
 				{
-					"text"     : "",
+					"text"     : "Triglycerides",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Lipases",
+					"result"   : false
+				},
+				{
+					"text"     : "Enterocytes",
 					"result"   : false
 				}
 				
@@ -77,23 +77,23 @@
         },
         {
 			"id"       : 3,
-			"text"	   : "",
+			"text"	   : "Which organs synthesize erythropoietin?",
 			"next_id"  : 4,
 			"choices"  : [
 				{
-					"text"     : "",
+					"text"     : "Kidneys and small intestine",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Liver and pancreas",
+					"result"   : false
+				},
+				{
+					"text"     : "Liver and kidneys",
 					"result"   : true
 				},
 				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
+					"text"     : "Spleen and kidneys",
 					"result"   : false
 				}
 				
@@ -101,23 +101,23 @@
         },
         {
 			"id"       : 4,
-			"text"	   : "",
+			"text"	   : "On the characteristics of acute and chronic inflammations, mark the INCORRECT statement",
 			"next_id"  : 0,
 			"choices"  : [
 				{
-					"text"     : "",
+					"text"     : "Tissue destruction, fibrosis and necrosis",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "The main mediators are vasoactive amines",
 					"result"   : true
 				},
 				{
-					"text"     : "",
+					"text"     : "The major cells involved are monocytes and lymphocytes",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "The main cells involved are some mononuclear cells",
 					"result"   : false
 				}
 				

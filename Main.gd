@@ -16,9 +16,11 @@ var was_started = Global_profile.was_started
 
 func _ready():
 	randomize()
+	_on_PlayButton_pressed()
 	if !was_started:
-		$Start_question.hide()
-		$Start_btns.show()
+#		$Start_question.hide()
+#		$Start_btns.show()
+		pass
 	else:
 		$Start_question.show()
 		$Start_btns.hide()
@@ -131,31 +133,23 @@ func _on_PlayButton_pressed():
 
 func _on_TextureButton_pressed():
 	get_tree().quit()
-
-
 func _on_figado_pressed():
 	pas_question(0)
-
-
 func _on_estomago_pressed():
 	pas_question(1)
-
-
 func _on_pulmao_pressed():
 	pas_question(2)
-
-
 func _on_ap_urina_pressed():
 	pas_question(3)
-
 func _on_intestino_pressed():
 	pas_question(4)
 
 func pas_question(value):
 	Global_profile.set_start(true)
 	if pas == value:
-		get_tree().change_scene(main)
+		$AnimationPlayer.play("zoom_in")
 	else:
 		_on_PlayButton_pressed()
 
-
+func change_to_mainGame():
+	get_tree().change_scene(main)

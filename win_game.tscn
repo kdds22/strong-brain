@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://win_game.gd" type="Script" id=1]
+[ext_resource path="res://assets/PNG/grey_panel.png" type="Texture" id=2]
+[ext_resource path="res://assets/brain_winner.png" type="Texture" id=3]
+[ext_resource path="res://font_game1.tres" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 45
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="win_game" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+margin_left = -29.0
+margin_top = -28.0
+margin_right = 514.0
+margin_bottom = 828.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 100, 100 )
+patch_margin_left = 4
+patch_margin_top = 5
+patch_margin_right = 4
+patch_margin_bottom = 3
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 241.333, 273.909 )
+scale = Vector2( 0.597594, 0.597594 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = -2.0
+margin_top = 544.0
+margin_right = 477.0
+margin_bottom = 772.0
+custom_fonts/font = SubResource( 1 )
+text = "GOOD BOY! 
+Knowing too much... 
+Keep studying and you will be a doctor."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

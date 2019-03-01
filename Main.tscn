@@ -1,17 +1,18 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
-[ext_resource path="res://assets/body.png" type="Texture" id=2]
-[ext_resource path="res://assets/intes.png" type="Texture" id=3]
-[ext_resource path="res://assets/est.png" type="Texture" id=4]
-[ext_resource path="res://assets/fig.png" type="Texture" id=5]
-[ext_resource path="res://assets/pul.png" type="Texture" id=6]
-[ext_resource path="res://assets/sys_uri.png" type="Texture" id=7]
-[ext_resource path="res://mouse.tscn" type="PackedScene" id=8]
-[ext_resource path="res://assets/PNG/green_button00.png" type="Texture" id=9]
-[ext_resource path="res://assets/PNG/green_button01.png" type="Texture" id=10]
-[ext_resource path="res://font_game1.tres" type="DynamicFontData" id=11]
-[ext_resource path="res://assets/PNG/blue_panel.png" type="Texture" id=12]
+[ext_resource path="res://assets/book_openned.png" type="Texture" id=2]
+[ext_resource path="res://assets/body.png" type="Texture" id=3]
+[ext_resource path="res://assets/intes.png" type="Texture" id=4]
+[ext_resource path="res://assets/est.png" type="Texture" id=5]
+[ext_resource path="res://assets/fig.png" type="Texture" id=6]
+[ext_resource path="res://assets/pul.png" type="Texture" id=7]
+[ext_resource path="res://assets/sys_uri.png" type="Texture" id=8]
+[ext_resource path="res://mouse.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/PNG/green_button00.png" type="Texture" id=10]
+[ext_resource path="res://assets/PNG/green_button01.png" type="Texture" id=11]
+[ext_resource path="res://font_game1.tres" type="DynamicFontData" id=12]
+[ext_resource path="res://assets/PNG/blue_panel.png" type="Texture" id=13]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 81.3541, 68.2382 )
@@ -47,40 +48,95 @@ radius = 19.7058
 [sub_resource type="DynamicFont" id=10]
 size = 30
 outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 11 )
+font_data = ExtResource( 12 )
 
 [sub_resource type="DynamicFont" id=11]
 size = 30
 outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 11 )
+font_data = ExtResource( 12 )
 
 [sub_resource type="DynamicFont" id=12]
 size = 30
 outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 11 )
+font_data = ExtResource( 12 )
 
-[sub_resource type="DynamicFont" id=13]
-size = 15
+[sub_resource type="DynamicFont" id=15]
+size = 20
 outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 11 )
+use_filter = true
+font_data = ExtResource( 12 )
 
-[sub_resource type="DynamicFont" id=14]
-size = 30
+[sub_resource type="DynamicFont" id=16]
+size = 31
 outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 11 )
+use_filter = true
+font_data = ExtResource( 12 )
+
+[sub_resource type="Animation" id=17]
+resource_name = "zoom_in"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 20, 20 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -4544.09, -9882.99 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1.4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "change_to_mainGame"
+} ]
+}
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
 main = "res://MainGame.tscn"
 main_questions = "res://questions/main.json"
 
+[node name="bg_book" type="TextureRect" parent="."]
+margin_left = -461.0
+margin_top = -18.0
+margin_right = 507.0
+margin_bottom = 864.0
+texture = ExtResource( 2 )
+expand = true
+
 [node name="body" type="Sprite" parent="."]
 self_modulate = Color( 0.952941, 0.819608, 0.662745, 1 )
-position = Vector2( 242.003, 517.078 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
+position = Vector2( 238.139, 503.078 )
+scale = Vector2( 0.42, 0.42 )
+texture = ExtResource( 3 )
 
-[node name="Orgaos" type="Node" parent="."]
+[node name="Orgaos" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( 25.2047, 49.6496 )
+scale = Vector2( 0.88, 0.87 )
 
 [node name="Area_intestino" type="Area2D" parent="Orgaos" groups=[
 "intestino",
@@ -96,7 +152,7 @@ margin_top = 66.0
 margin_right = 795.0
 margin_bottom = 1043.0
 rect_scale = Vector2( 0.3, 0.3 )
-texture_normal = ExtResource( 3 )
+texture_normal = ExtResource( 4 )
 expand = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Orgaos/Area_intestino"]
@@ -118,7 +174,7 @@ margin_top = -133.0
 margin_right = 558.0
 margin_bottom = 777.0
 rect_scale = Vector2( 0.3, 0.3 )
-texture_normal = ExtResource( 4 )
+texture_normal = ExtResource( 5 )
 expand = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Orgaos/Area_estomago"]
@@ -146,7 +202,7 @@ margin_top = -29.394
 margin_right = 510.275
 margin_bottom = 409.606
 rect_scale = Vector2( 0.31, 0.31 )
-texture_normal = ExtResource( 5 )
+texture_normal = ExtResource( 6 )
 expand = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Orgaos/Area_figado"]
@@ -173,7 +229,7 @@ margin_top = -365.0
 margin_right = 803.0
 margin_bottom = 893.0
 rect_scale = Vector2( 0.3, 0.3 )
-texture_normal = ExtResource( 6 )
+texture_normal = ExtResource( 7 )
 expand = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Orgaos/Area_pulmao"]
@@ -205,7 +261,7 @@ margin_top = 36.0
 margin_right = 619.0
 margin_bottom = 1042.0
 rect_scale = Vector2( 0.3, 0.3 )
-texture_normal = ExtResource( 7 )
+texture_normal = ExtResource( 8 )
 expand = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Orgaos/Area_ap_urina"]
@@ -220,9 +276,11 @@ shape = SubResource( 9 )
 position = Vector2( -5.79745, 306.737 )
 shape = SubResource( 9 )
 
-[node name="mouse" parent="." instance=ExtResource( 8 )]
+[node name="mouse" parent="." instance=ExtResource( 9 )]
 
 [node name="Start_btns" type="Node2D" parent="."]
+editor/display_folded = true
+visible = false
 
 [node name="btn_Play" type="Node2D" parent="Start_btns"]
 position = Vector2( 147.328, 112.952 )
@@ -230,8 +288,8 @@ position = Vector2( 147.328, 112.952 )
 [node name="TextureButton" type="TextureButton" parent="Start_btns/btn_Play"]
 margin_right = 40.0
 margin_bottom = 40.0
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 10 )
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
 
 [node name="Label" type="Label" parent="Start_btns/btn_Play/TextureButton"]
 margin_left = 55.8482
@@ -247,8 +305,8 @@ position = Vector2( 147.328, 174.338 )
 [node name="TextureButton" type="TextureButton" parent="Start_btns/btn_Quit"]
 margin_right = 40.0
 margin_bottom = 40.0
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 10 )
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
 
 [node name="Label" type="Label" parent="Start_btns/btn_Quit/TextureButton"]
 margin_left = 60.3765
@@ -258,36 +316,38 @@ margin_bottom = 37.7735
 custom_fonts/font = SubResource( 11 )
 text = "QUIT"
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Start_btns"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 136.0
+margin_top = 41.0
+margin_right = 361.0
+margin_bottom = 81.0
+custom_fonts/normal_font = SubResource( 12 )
+text = "STRONG BRAIN"
+
 [node name="StrongBrainLogo" type="NinePatchRect" parent="Start_btns"]
+visible = false
 margin_left = 28.0
 margin_top = 27.0
 margin_right = 450.0
 margin_bottom = 94.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0.5, 0, 99.5, 99.5 )
 patch_margin_left = 4
 patch_margin_top = 5
 patch_margin_right = 5
 patch_margin_bottom = 4
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Start_btns/StrongBrainLogo"]
-self_modulate = Color( 0, 0, 0, 1 )
-margin_left = 108.0
-margin_top = 14.0
-margin_right = 333.0
-margin_bottom = 54.0
-custom_fonts/normal_font = SubResource( 12 )
-text = "STRONG BRAIN"
-
 [node name="Start_question" type="Node2D" parent="."]
-visible = false
+position = Vector2( 31.327, 131.674 )
+scale = Vector2( 0.859325, 0.859325 )
 
 [node name="Question" type="NinePatchRect" parent="Start_question"]
-margin_left = 28.0
+margin_left = 28.5675
 margin_top = 27.0
-margin_right = 450.0
+margin_right = 450.568
 margin_bottom = 94.0
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 region_rect = Rect2( 0.5, 0, 99.5, 99.5 )
 patch_margin_left = 4
 patch_margin_top = 5
@@ -295,26 +355,30 @@ patch_margin_right = 5
 patch_margin_bottom = 4
 
 [node name="RichTextLabel" type="Label" parent="Start_question/Question"]
-margin_left = 67.0
-margin_top = 14.0
-margin_right = 333.0
-margin_bottom = 57.0
-custom_fonts/font = SubResource( 13 )
+margin_left = 43.0
+margin_top = 3.0
+margin_right = 357.0
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 15 )
 text = "osaasdojbnasbafbsfbafbasfbafbafb"
 align = 1
 valign = 1
 autowrap = true
 
 [node name="choose" type="Label" parent="Start_question"]
-margin_left = -10.3386
-margin_top = 134.405
-margin_right = 489.661
-margin_bottom = 179.405
-custom_fonts/font = SubResource( 14 )
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 6.09794
+margin_top = 102.0
+margin_right = 497.098
+margin_bottom = 142.0
+custom_fonts/font = SubResource( 16 )
 text = "Choose an organ to start"
 align = 1
 valign = 1
 uppercase = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/zoom_in = SubResource( 17 )
 
 [connection signal="area_entered" from="Orgaos/Area_intestino" to="." method="_on_Area_intestino_area_entered"]
 [connection signal="area_exited" from="Orgaos/Area_intestino" to="." method="_on_Area_intestino_area_exited"]

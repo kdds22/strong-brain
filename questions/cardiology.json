@@ -5,23 +5,23 @@
 	[
 		{
 			"id"       : 0,
-			"text"	   : "",
+			"text"	   : "Are found in the physical examination of patients with cardiac tamponade all, EXCEPT:",
 			"next_id"  : 1,
 			"choices"  : [
 				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
+					"text"     : "Sign of Kussmaul",
 					"result"   : true
 				},
 				{
-					"text"     : "",
+					"text"     : "Respiratory rate > 20/min",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Elevation of jugular venous pressure",
+					"result"   : false
+				},
+				{
+					"text"     : "Inspiratory fall in systolic blood pressure > 10 mmHg",
 					"result"   : false
 				}
 				
@@ -29,23 +29,23 @@
         },
         {
 			"id"       : 1,
-			"text"	   : "",
+			"text"	   : "Indicate the alternative that presents a lesser vascular phenotype-like criterion in the modified Duke criteria for infective endocarditis.",
 			"next_id"  : 2,
 			"choices"  : [
 				{
-					"text"     : "",
+					"text"     : "Osler's nodules",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Glomerulonephritis",
+					"result"   : false
+				},
+				{
+					"text"     : "Janeway injuries",
 					"result"   : true
 				},
 				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
+					"text"     : "Positive rheumatoid factor",
 					"result"   : false
 				}
 				
@@ -53,47 +53,47 @@
         },
         {
 			"id"       : 2,
-			"text"	   : "",
+			"text"	   : "There are absolute contraindications to the use of thrombolytics in AMI with STEMI, except:",
 			"next_id"  : 3,
 			"choices"  : [
 				{
-					"text"     : "",
+					"text"     : "Suspected aortic dissection.",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Known malignant intracranial neoplasm",
+					"result"   : false
+				},
+				{
+					"text"     : "Ischemic stroke in the last 3 months",
+					"result"   : false
+				},
+				{
+					"text"     : "Ischemic stroke in the last 6 months",
 					"result"   : true
-				},
-				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
-					"result"   : false
 				}
 				
 			]
         },
         {
 			"id"       : 3,
-			"text"	   : "",
+			"text"	   : "In patients with pulmonary hypertension, pulmonary capillary pressure in right cardiac catheterization will be increased in the presence of:",
 			"next_id"  : 4,
 			"choices"  : [
 				{
-					"text"     : "",
+					"text"     : "Severe obstructive pulmonary disease",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Severe mitral valve dysfunction",
 					"result"   : true
 				},
 				{
-					"text"     : "",
+					"text"     : "Severe interstitial lung disease",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Recurrent pulmonary embolism",
 					"result"   : false
 				}
 				
@@ -101,23 +101,23 @@
         },
         {
 			"id"       : 4,
-			"text"	   : "",
+			"text"	   : "Patient with chronic obstructive pulmonary disease becomes torporous after initiation of oxygen administration at 2 liters / minute. There are no further clinical changes. Oximetry shows 94% saturation. In this case,",
 			"next_id"  : 0,
 			"choices"  : [
 				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
+					"text"     : "The most likely cause of numbness is hypercapnia",
 					"result"   : true
 				},
 				{
-					"text"     : "",
+					"text"     : "The oximeter measurement must be incorrect",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "The oxygen flow should be increased",
+					"result"   : false
+				},
+				{
+					"text"     : "The oxygen flow meter must be de-calibrated",
 					"result"   : false
 				}
 				

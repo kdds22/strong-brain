@@ -77,23 +77,23 @@
         },
         {
 			"id"       : 3,
-			"text"	   : "",
+			"text"	   : "What is the last stage of nucleus change after necrosis?",
 			"next_id"  : 4,
 			"choices"  : [
 				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
+					"text"     : "Karyolysis",
 					"result"   : true
 				},
 				{
-					"text"     : "",
+					"text"     : "Pyknosis",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Karyorrhexis",
+					"result"   : false
+				},
+				{
+					"text"     : "Pyknorrhexis",
 					"result"   : false
 				}
 				
@@ -101,24 +101,24 @@
         },
         {
 			"id"       : 4,
-			"text"	   : "",
+			"text"	   : "They are morphological patterns of necrosis, EXCEPT:",
 			"next_id"  : 0,
 			"choices"  : [
 				{
-					"text"     : "",
+					"text"     : "Coagulative necrosis",
 					"result"   : false
 				},
 				{
-					"text"     : "",
+					"text"     : "Liquefactive necrosis",
+					"result"   : false
+				},
+				{
+					"text"     : "Fat necrosis",
+					"result"   : false
+				},
+				{
+					"text"     : "Granular necrosis",
 					"result"   : true
-				},
-				{
-					"text"     : "",
-					"result"   : false
-				},
-				{
-					"text"     : "",
-					"result"   : false
 				}
 				
 			]

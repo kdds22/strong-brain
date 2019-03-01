@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://test.gd" type="Script" id=1]
 [ext_resource path="res://assets/PNG/blue_panel.png" type="Texture" id=2]
@@ -6,9 +6,22 @@
 [ext_resource path="res://assets/PNG/blue_button00.png" type="Texture" id=4]
 [ext_resource path="res://assets/PNG/blue_button01.png" type="Texture" id=5]
 
-[sub_resource type="DynamicFont" id=1]
-size = 15
+[sub_resource type="DynamicFont" id=2]
+size = 20
 outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 17
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
 font_data = ExtResource( 3 )
 
 [node name="Panel_Base" type="Node2D"]
@@ -28,12 +41,12 @@ patch_margin_right = 5
 patch_margin_bottom = 4
 
 [node name="QuestionType" type="RichTextLabel" parent="Panel"]
-margin_left = 28.65
-margin_top = 17.85
-margin_right = 144.65
-margin_bottom = 46.85
+margin_left = 29.0
+margin_top = 18.0
+margin_right = 188.0
+margin_bottom = 47.0
 hint_tooltip = "type"
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 2 )
 text = "BASE"
 
 [node name="QuestionText" type="RichTextLabel" parent="Panel"]
@@ -42,8 +55,11 @@ margin_top = 64.0
 margin_right = 367.0
 margin_bottom = 226.0
 hint_tooltip = "statement"
-custom_fonts/normal_font = SubResource( 1 )
+custom_fonts/normal_font = SubResource( 3 )
 tab_size = 6
+text = "TEST TEST TEST TEST 
+TEST TEST TEST TEST 
+TEST TEST "
 
 [node name="Choices" type="Control" parent="Panel"]
 margin_left = 169.1
@@ -69,7 +85,7 @@ margin_top = 2.0
 margin_right = 331.0
 margin_bottom = 60.0
 hint_tooltip = "Option A"
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 4 )
 text = "sfsdfsdgsdgdgdagdgdsgsfsafdsagsdgs
 dgsdgsdgsdgsd
 "
@@ -95,7 +111,7 @@ margin_top = 2.0
 margin_right = 333.0
 margin_bottom = 58.0
 hint_tooltip = "Option B"
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 4 )
 text = "sfsdfsdgsdgdgdagdgdsgsfsafdsagsdgs
 dgsdgsdgsdgsd
 "
@@ -121,7 +137,7 @@ margin_top = 2.0
 margin_right = 333.0
 margin_bottom = 57.0
 hint_tooltip = "Option C"
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 4 )
 text = "sfsdfsdgsdgdgdagdgdsgsfsafdsagsdgs
 dgsdgsdgsdgsd
 "
@@ -147,7 +163,7 @@ margin_top = 2.0
 margin_right = 332.0
 margin_bottom = 58.0
 hint_tooltip = "Option D"
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 4 )
 text = "sfsdfsdgsdgdgdagdgdsgsfsafdsagsdgs
 dgsdgsdgsdgsd
 "

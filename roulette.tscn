@@ -1,61 +1,68 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://roulette.gd" type="Script" id=1]
-[ext_resource path="res://assets/roll.png" type="Texture" id=2]
+[ext_resource path="res://assets/new_roulette.png" type="Texture" id=2]
 
 [node name="roulette" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
-
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = -385.78
-margin_top = -381.365
-margin_right = 386.22
-margin_bottom = 381.635
+margin_left = -396.0
+margin_top = -395.0
+margin_right = 393.0
+margin_bottom = 394.0
+rect_rotation = 0.0672335
 texture_normal = ExtResource( 2 )
 
 [node name="areas" type="Node2D" parent="."]
 editor/display_folded = true
+position = Vector2( 0, 12 )
+rotation = -0.734987
 
 [node name="pathology" type="Area2D" parent="areas"]
+position = Vector2( 7.23382, -10.9851 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/pathology"]
-polygon = PoolVector2Array( 20.8337, -37.3037, 43.5366, -0.158544, 369.114, 1.22186, 354.625, -89.1615, 326.274, -171.574, 263.048, -251.838, 189.25, -312.477 )
+polygon = PoolVector2Array( 20.8337, -37.3037, 43.5366, -0.158544, 376.183, 3.50947, 363.244, -98.9707, 324.378, -190.842, 261.637, -269.025, 193.595, -323.109 )
 
 [node name="neurology" type="Area2D" parent="areas"]
+position = Vector2( 6.56325, -10.2432 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/neurology"]
+position = Vector2( -0.294672, -0.266364 )
 rotation = -1.10644
-polygon = PoolVector2Array( 17.4321, -49.1529, 42.9077, 1.78714, 364.244, 28.7856, 357.082, -75.5044, 323.692, -168.836, 265.637, -250.45, 193.2, -310.652 )
+polygon = PoolVector2Array( 17.4321, -49.1529, 42.9077, 1.78714, 376.602, 28.163, 369.025, -76.9932, 336.336, -170.155, 276.371, -255.632, 202.567, -318.826 )
 
 [node name="physiology" type="Area2D" parent="areas"]
+position = Vector2( 6.56325, -10.2432 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/physiology"]
 position = Vector2( -13.9667, 1.39668 )
 rotation = -2.13581
-polygon = PoolVector2Array( 18.9581, -39.957, 44.631, 1.42371, 359.664, 17.3715, 348.778, -78.117, 315.763, -164.994, 264.086, -237.735, 188.719, -302.002 )
+polygon = PoolVector2Array( 18.9581, -39.957, 44.631, 1.42371, 371.631, 21.3826, 364.008, -61.0448, 333.196, -152.981, 270.442, -245.666, 194.134, -307.836 )
 
 [node name="anatomy" type="Area2D" parent="areas"]
+position = Vector2( 6.56325, -10.2432 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/anatomy"]
 position = Vector2( -13.9667, 1.39668 )
 rotation = -3.19738
-polygon = PoolVector2Array( 23.6409, -46.8705, 44.8757, -3.29534, 355.818, 17.1554, 348.778, -78.117, 315.763, -164.994, 264.086, -237.735, 189.789, -303.435 )
+polygon = PoolVector2Array( 23.6409, -46.8705, 44.8757, -3.29534, 363.099, 18.2334, 356.652, -68.9962, 326.151, -168.475, 263.512, -255.367, 195.562, -313.05 )
 
 [node name="cardiology" type="Area2D" parent="areas"]
+position = Vector2( 6.56325, -10.2432 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/cardiology"]
 position = Vector2( -13.9667, 1.39668 )
 rotation = -4.26356
-polygon = PoolVector2Array( 24.3325, -54.0545, 52.8362, -2.71593, 357.567, 18.6502, 353.65, -68.6785, 322.712, -168.142, 269.703, -249.663, 201.654, -312.674 )
+polygon = PoolVector2Array( 24.3325, -54.0545, 52.8362, -2.71593, 368.874, 19.0266, 364.839, -73.335, 335.416, -169.749, 279.051, -256.432, 210.108, -320.15 )
 
 [node name="pharmacology" type="Area2D" parent="areas"]
+position = Vector2( 6.56325, -10.2432 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="areas/pharmacology"]
 position = Vector2( -13.9667, 1.39668 )
 rotation = -5.2938
-polygon = PoolVector2Array( 30.5471, -48.7855, 58.6928, -7.29099, 371.837, 11.5254, 368.318, -75.0116, 338.522, -177.159, 278.067, -259.968, 210.827, -319.935 )
+polygon = PoolVector2Array( 30.5471, -48.7855, 58.6928, -7.29099, 382.732, 14.773, 379.666, -67.4368, 356.29, -155.756, 298.294, -251.805, 216.154, -325.818 )
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

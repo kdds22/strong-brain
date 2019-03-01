@@ -17,3 +17,11 @@ func _ready():
 	areas.append(cardiology_id)
 
 #pathology_id, pharmacology_id, neurology_id, physiology_id, anatomy_id, cardiology_id
+
+func reset_data():
+	pathology_id    = 0  
+	pharmacology_id = 0  
+	neurology_id    = 0  
+	physiology_id   = 0  
+	anatomy_id      = 0  
+	cardiology_id   = 0  

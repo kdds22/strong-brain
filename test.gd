@@ -1,5 +1,8 @@
 extends Node2D
 
+var pre_brainLooser = preload("res://brain_looser.tscn")
+var pre_brainWinner = preload("res://brain_winner.tscn")
+
 #global_jsons
 export (String, FILE, "*.json") var questions_ : String
 
@@ -90,12 +93,26 @@ func call_choice(value):
 		end_question(0)
 	else:
 		Global_IDs.areas[global_area] = node_next_id
-		print("You're right.")
 		end_question(1)
 
 func end_question(value):
-	
-	pass
+	if value == 0:
+		var brainLooser = pre_brainLooser.instance()
+		brainLooser.connect("endAnim", self, "_on_BrainEndAnim")
+		add_child(brainLooser)
+	elif value == 1:
+		var brainWinner = pre_brainWinner.instance()
+		brainWinner.connect("endAnim", self, "_on_BrainEndAnim")
+		add_child(brainWinner)
+	else:
+		return
+
+func _on_BrainEndAnim(value):
+	if value:
+		Global_profile.brainsWinners += 1
+	else:
+		Global_profile.brainsLoosers += 1
+	queue_free()
 
 
 
