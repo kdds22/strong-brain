@@ -30,18 +30,18 @@ radius = 29.3509
 radius = 25.7903
 height = 5.24911
 
-[sub_resource type="CircleShape2D" id=9]
+[sub_resource type="CircleShape2D" id=6]
 radius = 19.7058
-
-[sub_resource type="CapsuleShape2D" id=6]
-radius = 36.6407
-height = 105.953
 
 [sub_resource type="CapsuleShape2D" id=7]
 radius = 36.6407
-height = 83.0723
+height = 105.953
 
 [sub_resource type="CapsuleShape2D" id=8]
+radius = 36.6407
+height = 83.0723
+
+[sub_resource type="CapsuleShape2D" id=9]
 radius = 7.15018
 height = 206.993
 
@@ -117,7 +117,6 @@ tracks/2/keys = {
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
 main = "res://MainGame.tscn"
-main_questions = "res://questions/main.json"
 
 [node name="bg_book" type="TextureRect" parent="."]
 margin_left = -461.0
@@ -235,15 +234,15 @@ expand = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Orgaos/Area_ap_urina"]
 position = Vector2( -81.9074, 100.232 )
-shape = SubResource( 9 )
+shape = SubResource( 6 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Orgaos/Area_ap_urina"]
 position = Vector2( 81.164, 91.1779 )
-shape = SubResource( 9 )
+shape = SubResource( 6 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Orgaos/Area_ap_urina"]
 position = Vector2( -5.79745, 306.737 )
-shape = SubResource( 9 )
+shape = SubResource( 6 )
 
 [node name="Area_pulmao" type="Area2D" parent="Orgaos" groups=[
 "pulmao",
@@ -266,16 +265,16 @@ expand = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Orgaos/Area_pulmao"]
 position = Vector2( -72.58, -111.033 )
 rotation = 0.238571
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Orgaos/Area_pulmao"]
 position = Vector2( 71.8236, -107.973 )
 rotation = -0.338984
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Orgaos/Area_pulmao"]
 position = Vector2( -4.28088, -249.718 )
-shape = SubResource( 8 )
+shape = SubResource( 9 )
 
 [node name="mouse" parent="." instance=ExtResource( 9 )]
 

@@ -1,10 +1,10 @@
 extends Node2D
 
-#var main = "res://MainGame.tscn"
-
 export (String, FILE, "*.tscn") var main : String
 
-export (String, FILE, "*.json") var main_questions : String
+#export (String, FILE, "*.json") var main_questions : String
+
+var main_questions = "res://questions/main.json"
 
 var org = ["Figado", "Estomago", "Pulmao", "ApUrinario", "Intestino"]
 var quest = []
@@ -46,11 +46,11 @@ func show_main(txt):
 	$Start_question/Question/RichTextLabel.text = txt
 
 
-func load_main_question(file_path):
+func load_main_question():
 	var file : File = File.new()
-	assert file.file_exists(file_path)
+	assert file.file_exists("res://questions/main.json")
 	
-	file.open(file_path, file.READ)
+	file.open("res://questions/main.json", file.READ)
 	var question = parse_json(file.get_as_text())
 	assert question.size() > 0
 	file.close()
@@ -128,7 +128,7 @@ func _on_Area_ap_urina_area_exited(area):
 
 
 func _on_PlayButton_pressed():
-	var question = load_main_question(main_questions)
+	var question = load_main_question()
 	choose_question_main(question)
 
 func _on_TextureButton_pressed():
@@ -147,6 +147,7 @@ func _on_intestino_pressed():
 func pas_question(value):
 	Global_IDs.set_start(true)
 	if pas == value:
+		$Orgaos.hide()
 		$AnimationPlayer.play("zoom_in")
 	else:
 		_on_PlayButton_pressed()
